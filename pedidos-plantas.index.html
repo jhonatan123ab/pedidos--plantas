@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vivero - Registro de Clientes</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #228B22;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 2rem;
+        }
+        form {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        form label {
+            display: block;
+            margin: 1rem 0 0.5rem;
+        }
+        form input, form select, form button {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        form button {
+            background-color: #228B22;
+            color: white;
+            font-size: 1rem;
+            border: none;
+            cursor: pointer;
+        }
+        form button:hover {
+            background-color: #1e7a1e;
+        }
+        .plants-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+        }
+        .plants-gallery img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Vivero - Registro de Clientes</h1>
+    </header>
+    <main>
+        <form id="clientForm" action="https://wa.me/59178313242" method="get" target="_blank">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="phone">Número:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="locality">Localidad:</label>
+            <input type="text" id="locality" name="locality" required>
+
+            <label for="plant">Planta de interés:</label>
+            <select id="plant" name="plant" required>
+                <option value="campanolas">Campánulas</option>
+                <option value="rosas">Rosas</option>
+                <option value="frutales">Frutales</option>
+                <option value="hortensias">Hortensias</option>
+                <option value="pinos">Pinos</option>
+            </select>
+
+            <button type="submit">Registrar</button>
+        </form>
+
+        <section class="plants-gallery">
+            <img src="https://via.placeholder.com/150" alt="Campánulas">
+            <img src="https://via.placeholder.com/150" alt="Rosas">
+            <img src="https://via.placeholder.com/150" alt="Frutales">
+            <img src="https://via.placeholder.com/150" alt="Hortensias">
+            <img src="https://via.placeholder.com/150" alt="Pinos">
+        </section>
+    </main>
+</body>
+</html>
